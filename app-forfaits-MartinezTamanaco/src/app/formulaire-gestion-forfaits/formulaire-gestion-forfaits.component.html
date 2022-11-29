@@ -1,0 +1,104 @@
+<h2><b>Formulaire de gestion de forfaits :</b></h2>
+
+<div class="flex-container">
+
+  <form class="example-form">
+      <h3><b>Nom du forfait :</b></h3>
+      <mat-form-field class="example-full-width">
+        <mat-label>Nom du forfait :</mat-label>
+        <input matInput placeholder="Nom du forfait" required>
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>Description :</mat-label>
+        <textarea matInput placeholder="Description" required></textarea>
+      </mat-form-field>
+  </form> 
+
+
+    
+
+  <form class="example-form">
+      <h3><b>Établissement :</b></h3>
+      <mat-form-field class="example-full-width">
+        <mat-label>Nom de l’établissement :</mat-label>
+        <input matInput placeholder="Nom de l’établissement" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+          <mat-label>Description :</mat-label>
+          <textarea matInput placeholder="Description" required></textarea>
+      </mat-form-field>  
+  </form> 
+
+  <form class="example-form">
+    <h3><b>Coordonnées :</b></h3>
+    <mat-form-field class="example-full-width">
+      <mat-label>Adresse :</mat-label>
+      <input matInput placeholder="Adresse" required>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Ville :</mat-label>
+      <input matInput placeholder="Ville" required>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Téléphone :</mat-label>
+      <input matInput placeholder="Téléphone" required>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Courriel :</mat-label>
+      <input matInput placeholder="Courriel" required>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Site Web :</mat-label>
+      <input matInput placeholder="Site Web" required>
+    </mat-form-field>
+  </form>
+
+  <form class="example-form">
+    <h3><b>Date :</b></h3>
+    <mat-form-field appearance="fill">
+      <mat-label>Date de début : / </mat-label>
+      <mat-label>Date de fin :</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input matStartDate placeholder="Date de début" required>
+        <input matEndDate placeholder="Date de fin" required>
+      </mat-date-range-input>
+      <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+ 
+  <section class="example-section">
+    <mat-checkbox class="example-margin">Premium</mat-checkbox>
+  </section>
+</form>
+
+  <form action="">
+    <h3><b>Prix :</b></h3>
+    <mat-form-field class="example-full-width">
+      <mat-label>Prix</mat-label>
+      <input matInput placeholder="00" type="number" min="0" value="00.00" step=".01" required>  
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Nouveau prix</mat-label>
+      <input matInput placeholder="00" type="number" min="0" value="00.00" step=".01" required>  
+    </mat-form-field>
+  </form>
+
+  <app-formulaire-avis></app-formulaire-avis>
+
+</div>
+
+
+
+    
+
+
+
+
+

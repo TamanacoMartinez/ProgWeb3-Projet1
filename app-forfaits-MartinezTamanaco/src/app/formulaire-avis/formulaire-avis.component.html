@@ -1,0 +1,15 @@
+
+
+
+  <!-- <mat-slider min="1" max="10" step="1" value="1" showTickMarks>
+    <input matSliderThumb>
+  </mat-slider>
+
+  <mat-slider>
+    <input matSliderStartThumb>
+    <input matSliderEndThumb>
+  </mat-slider> -->
+
+  <mat-slider min="1" max="10" step="1" showTickMarks discrete [displayWith]="formatLabel">
+    <input matSliderThumb>
+  </mat-slider>
