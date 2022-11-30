@@ -14,7 +14,6 @@ import { PetitForfaitComponent } from './petit-forfait/petit-forfait.component';
 import { ForfaitCompletComponent } from './forfait-complet/forfait-complet.component';
 import { FormulaireRechercheComponent } from './formulaire-recherche/formulaire-recherche.component';
 import { FormulaireGestionForfaitsComponent } from './formulaire-gestion-forfaits/formulaire-gestion-forfaits.component';
-import { EtablissementComponent } from './etablissement/etablissement.component';
 import { FormulaireAvisComponent } from './formulaire-avis/formulaire-avis.component';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -40,7 +39,6 @@ import {MatSliderModule} from '@angular/material/slider';
     ForfaitCompletComponent,
     FormulaireRechercheComponent,
     FormulaireGestionForfaitsComponent,
-    EtablissementComponent,
     FormulaireAvisComponent,
   ],
   imports: [
